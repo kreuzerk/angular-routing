@@ -7,7 +7,7 @@ import {AuthService} from './user/auth.service';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
-    pageTitle: string = 'Acme Product Management';
+    pageTitle = 'Acme Product Management';
 
     constructor(private authService: AuthService) {
     }
