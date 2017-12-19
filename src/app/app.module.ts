@@ -16,6 +16,7 @@ import {ProductModule} from './products/product.module';
 import {UserModule} from './user/user.module';
 import {MessageModule} from './messages/message.module';
 import {appRoutes} from './app.routes';
+import {NavbarComponent} from './navbar/navbar.component';
 
 @NgModule({
     imports: [
@@ -30,7 +31,8 @@ import {appRoutes} from './app.routes';
     declarations: [
         AppComponent,
         WelcomeComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        NavbarComponent
     ],
     bootstrap: [AppComponent]
 })

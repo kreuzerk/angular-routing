@@ -7,13 +7,5 @@ import {AuthService} from './user/auth.service';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
-    pageTitle = 'Acme Product Management';
 
-    constructor(private authService: AuthService) {
-    }
-
-    logOut(): void {
-        this.authService.logout();
-        console.log('Log out');
-    }
 }

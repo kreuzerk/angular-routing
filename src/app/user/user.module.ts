@@ -1,19 +1,23 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { LoginComponent } from './login.component';
-import { AuthService } from './auth.service';
+import {LoginComponent} from './login.component';
+import {AuthService} from './auth.service';
 
-import { SharedModule } from '../shared/shared.module';
+import {SharedModule} from '../shared/shared.module';
+import {RouterModule} from '@angular/router';
+import {userRoutes} from './user.routes';
 
 @NgModule({
-  imports: [
-    SharedModule
-  ],
-  declarations: [
-    LoginComponent
-  ],
-  providers: [
-    AuthService
-  ]
+    imports: [
+        SharedModule,
+        RouterModule.forChild(userRoutes)
+    ],
+    declarations: [
+        LoginComponent
+    ],
+    providers: [
+        AuthService
+    ]
 })
-export class UserModule { }
+export class UserModule {
+}
