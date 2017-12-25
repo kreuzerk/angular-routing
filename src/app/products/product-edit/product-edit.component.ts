@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 
-import {MessageService} from '../messages/message.service';
+import {MessageService} from '../../messages/message.service';
 
-import {IProduct} from './product';
-import {ProductService} from './product.service';
+import {IProduct} from '../product';
+import {ProductService} from '../product.service';
 import {ActivatedRoute, Params} from '@angular/router';
 
 @Component({
