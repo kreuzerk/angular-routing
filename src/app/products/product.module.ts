@@ -10,6 +10,7 @@ import {ProductService} from './product.service';
 import {SharedModule} from '../shared/shared.module';
 import {RouterModule} from '@angular/router';
 import {productRoutes} from './product.routes';
+import {ProductResolver} from './product-resolver';
 
 @NgModule({
     imports: [
@@ -23,7 +24,8 @@ import {productRoutes} from './product.routes';
         ProductFilterPipe
     ],
     providers: [
-        ProductService
+        ProductService,
+        ProductResolver
     ]
 })
 export class ProductModule {
