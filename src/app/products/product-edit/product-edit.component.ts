@@ -4,7 +4,7 @@ import {MessageService} from '../../messages/message.service';
 
 import {IProduct} from '../product';
 import {ProductService} from '../product.service';
-import {ActivatedRoute, Params, Data} from '@angular/router';
+import {ActivatedRoute, Data} from '@angular/router';
 
 @Component({
     templateUrl: './product-edit.component.html',
