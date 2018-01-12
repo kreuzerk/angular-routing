@@ -20,6 +20,7 @@
                 <div class="col-md-6 col-md-offset-2">
                     <span>
                     <button class="btn btn-primary"
+                            [disabled]="!isValid()"
                             type="button"
                             style="width: 80px; margin-right: 10px"
                             (click)="saveProduct()">
