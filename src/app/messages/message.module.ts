@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { SharedModule } from '../shared/shared.module';
+import {SharedModule} from '../shared/shared.module';
 
-import { MessageComponent } from './message.component';
-import { MessageService } from './message.service';
+import {MessageComponent} from './message.component';
+import {MessageService} from './message.service';
+import {RouterModule} from '@angular/router';
+import {messageRoutes} from './message.routes';
 
 @NgModule({
     imports: [
-        SharedModule
+        SharedModule,
+        RouterModule.forChild(messageRoutes)
     ],
     declarations: [
         MessageComponent
@@ -16,4 +19,5 @@ import { MessageService } from './message.service';
         MessageService
     ]
 })
-export class MessageModule { }
+export class MessageModule {
+}

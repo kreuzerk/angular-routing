@@ -16,8 +16,11 @@
             <li *ngIf="authService.isLoggedIn()">
                 <a>Welcome {{ authService.currentUser.userName }}</a>
             </li>
-            <li>
-                <a>Show Messages</a>
+            <li *ngIf="!messageService.areMessagesDisplayed">
+                <a (click)="showMessages()">Show Messages</a>
+            </li>
+            <li *ngIf="messageService.areMessagesDisplayed">
+                <a (click)="hideMessages()">Hide Messages</a>
             </li>
             <li *ngIf="!authService.isLoggedIn()">
                 <a [routerLink]="['/login']">Log In</a>
