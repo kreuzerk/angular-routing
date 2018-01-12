@@ -16,16 +16,18 @@ import {UserModule} from './user/user.module';
 import {MessageModule} from './messages/message.module';
 import {NavbarComponent} from './navbar/navbar.component';
 import {AppRoutingModule} from './app.routing.module';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpClientModule,
-        InMemoryWebApiModule.forRoot(ProductData, {delay: 1000}),
+        InMemoryWebApiModule.forRoot(ProductData, {delay: 2000}),
         ProductModule,
         UserModule,
         MessageModule,
-        AppRoutingModule
+        AppRoutingModule,
+        SharedModule
     ],
     declarations: [
         AppComponent,
